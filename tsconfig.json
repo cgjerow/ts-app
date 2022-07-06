@@ -10,11 +10,5 @@
     "esModuleInterop": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"],
-  "scripts": {
-    "start": "tsc && node dist/index.js",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
+  "exclude": ["node_modules"]
 }
