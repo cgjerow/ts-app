@@ -4,11 +4,7 @@ module.exports = {
     node: true,
   },
 
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['plugin:@typescript-eslint/recommended', 'prettier'],
 
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -17,4 +13,8 @@ module.exports = {
   },
 
   plugins: ['@typescript-eslint'],
+
+  rules: {
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+  },
 };
